@@ -1,2 +1,67 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Compiled object files
+*.o
+*.obj
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# Directories for build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+
+# ASP.NET Scaffolding
+.scaffolding/
+
+# Logs and Database
+*.log
+*.ldf
+*.mdf
+
+# Environment and Configuration files
+.env
+*.local.settings.json
+
+# IIS configuration files
+.vs/
+.idea/
+.vscode/
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# JetBrains Rider and Resharper
+.idea/
+*.sln.iml
+*.csproj.user
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Packages
+*.nupkg
+*.snupkg
+
+# Publish output
+wwwroot/dist/
+wwwroot/assets/
+
+# Lock files
+project.lock.json
+project.fragment.lock.json
+
+# Visual Studio generated folders and files
+.vs/
+_ReSharper*/
+*.DotSettings.user
+
+# Azure Web App settings
+appsettings.Development.json
