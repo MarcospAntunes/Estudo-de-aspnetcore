@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/99Ftq+5w6A=",
+  "dgSpecHash": "i0N5Ijz7Kn0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Marcos\\Documents\\GitHub\\Estudo-de-aspnetcore\\TodoApi\\TodoApi.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,14 @@
     "C:\\Users\\Marcos\\.nuget\\packages\\nswag.core.yaml\\14.2.0\\nswag.core.yaml.14.2.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\nswag.generation\\14.2.0\\nswag.generation.14.2.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\nswag.generation.aspnetcore\\14.2.0\\nswag.generation.aspnetcore.14.2.0.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit\\2.9.2\\xunit.2.9.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit.analyzers\\1.16.0\\xunit.analyzers.1.16.0.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit.assert\\2.9.2\\xunit.assert.2.9.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit.core\\2.9.2\\xunit.core.2.9.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit.extensibility.core\\2.9.2\\xunit.extensibility.core.2.9.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit.extensibility.execution\\2.9.2\\xunit.extensibility.execution.2.9.2.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\yamldotnet\\16.2.0\\yamldotnet.16.2.0.nupkg.sha512"
   ],
   "logs": []
