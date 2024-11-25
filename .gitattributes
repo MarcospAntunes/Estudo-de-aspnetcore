@@ -65,3 +65,5 @@ _ReSharper*/
 
 # Azure Web App settings
 appsettings.Development.json
+.vscode
+Estudo-de-aspnetcore.sln
