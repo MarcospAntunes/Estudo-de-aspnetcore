@@ -7,7 +7,7 @@ namespace WebApi.Infra {
       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         => optionsBuilder.UseMySql(
             "Server=localhost;" +
-            "Port=3306;Database=`cadastro de terceiros`;" +
+            "Port=3306;Database=cadastro_de_terceiros;" +
             "User=root;" +
             "Password=",
             new MySqlServerVersion(new Version(9, 1, 0))

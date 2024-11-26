@@ -2,7 +2,6 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApi.Model {
-
   [Table("colaboradores")]
   public class Colaboradores {
     [Key]
