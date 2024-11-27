@@ -3,5 +3,6 @@ namespace WebApi.ViewModel {
     public string nomeCompleto { get; set; }
     public string CPF { get; set; }
     public string nascimento { get; set; }
+    public IFormFile foto { get; set; }
   }
 }

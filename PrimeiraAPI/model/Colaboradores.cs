@@ -9,11 +9,13 @@ namespace WebApi.Model {
     public string nomeCompleto { get; private set; }
     public string CPF { get; private set; }
     public string nascimento { get; private set; }
+    public string? foto { get; private set; }
 
-    public Colaboradores(string nomeCompleto, string CPF, string nascimento) {
+    public Colaboradores(string nomeCompleto, string CPF, string nascimento, string? foto) {
       this.nomeCompleto = nomeCompleto;
       this.CPF = CPF;
       this.nascimento = nascimento;
+      this.foto = foto;
     }
   }
 }

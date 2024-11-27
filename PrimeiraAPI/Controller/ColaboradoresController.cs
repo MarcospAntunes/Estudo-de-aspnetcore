@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Model;
 using WebApi.ViewModel;
+using System.IO;
 
 namespace WebApi.Controllers {
   [ApiController]
@@ -13,12 +14,24 @@ namespace WebApi.Controllers {
     }
 
     [HttpPost]
-    public IActionResult Add(ColaboradoresViewModel colaboradoresView) {
-      var colaborador = new Colaboradores(colaboradoresView.nomeCompleto, colaboradoresView.CPF, colaboradoresView.nascimento);
+    public IActionResult Add([FromForm] ColaboradoresViewModel colaboradoresView) {
+      var filePath = Path.Combine("Storage", colaboradoresView.foto.FileName);
+      Stream fileStream = new FileStream(filePath, FileMode.Create);
+      colaboradoresView.foto.CopyTo(fileStream);
 
+      var colaborador = new Colaboradores(colaboradoresView.nomeCompleto, colaboradoresView.CPF, colaboradoresView.nascimento, filePath);
       colaboradoresRepository.Add(colaborador);
 
       return Ok();
+    }
+
+    [HttpPost]
+    [Route("{id}/download")]
+    public IActionResult DownloadFoto(int id) {
+      var colaborador = colaboradoresRepository.Get(id);
+      var dataBytes = System.IO.File.ReadAllBytes(colaborador.foto);
+
+      return File(dataBytes, "image/png");
     }
 
     [HttpGet]

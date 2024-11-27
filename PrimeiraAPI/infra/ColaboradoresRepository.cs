@@ -13,5 +13,9 @@ namespace WebApi.Infraestrutura {
     public List<Colaboradores> Get() {
       return context.Colaboradores.ToList();
     }
+
+    public Colaboradores? Get(int id) {
+      return context.Colaboradores.Find(id);
+    }
   }
 }
