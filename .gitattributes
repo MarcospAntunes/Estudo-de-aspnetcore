@@ -1,69 +1,86 @@
-# Compiled object files
-*.o
-*.obj
-*.exe
-*.dll
-*.pdb
-*.cache
-
-# Directories for build output
-bin/
-obj/
-
-# User-specific files
-*.user
-*.rsuser
-*.suo
-
-# ASP.NET Scaffolding
-.scaffolding/
-
-# Logs and Database
-*.log
-*.ldf
-*.mdf
-
-# Environment and Configuration files
-.env
-*.local.settings.json
-
-# IIS configuration files
-.vs/
-.idea/
-.vscode/
-
-# Node.js dependencies
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# JetBrains Rider and Resharper
-.idea/
-*.sln.iml
-*.csproj.user
-
-# OS-specific files
+# Arquivos de sistema operacional
 .DS_Store
 Thumbs.db
 
-# Packages
+# Arquivos de log
+*.log
+*.tlog
+*.wrn
+*.err
+
+# Configuração do Visual Studio Code
+.vscode/
+
+# Saída da build
+bin/
+obj/
+out/
+
+# Pacotes NuGet
 *.nupkg
 *.snupkg
+packages/
 
-# Publish output
-wwwroot/dist/
-wwwroot/assets/
+# Configuração de usuário local
+*.user
+*.userosscache
+*.suo
+*.unsuccessfulbuild
+*.rsuser
 
-# Lock files
-project.lock.json
-project.fragment.lock.json
-
-# Visual Studio generated folders and files
+# Cache e dependências gerados
+*.vs/
 .vs/
-_ReSharper*/
-*.DotSettings.user
+*.deps.json
+*.runtimeconfig.dev.json
+*.runtimeconfig.json
 
-# Azure Web App settings
-appsettings.Development.json
-.vscode
-Estudo-de-aspnetcore.sln
+# Arquivos temporários do sistema
+*.tmp
+*.temp
+~*
+
+# Configurações do Rider
+.idea/
+
+# Arquivos de bloqueio do sistema
+.lock.json
+
+# Arquivos gerados pelo .NET Core
+.project
+*.sqlite
+*.db
+
+# Arquivos gerados pelo Publish
+wwwroot/dist/
+wwwroot/node_modules/
+wwwroot/.sass-cache/
+wwwroot/bundle/
+publish/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Outras extensões e backups
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+
+# Configurações e backups do editor
+*.vspscc
+*.vssscc
+.idea/
+.vscode/
+.history/
+
+# Outros arquivos desnecessários
+*.pid
+*.pid.lock
+*.log.*
+coverage/
