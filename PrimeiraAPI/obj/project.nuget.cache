@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "p4rU534OBdI=",
+  "dgSpecHash": "Ji8BOouSvKY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Marcos\\Documents\\GitHub\\Estudo-de-aspnetcore\\PrimeiraAPI\\PrimeiraAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.0\\microsoft.aspnetcore.authentication.jwtbearer.9.0.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
@@ -19,13 +20,20 @@
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.2.1\\microsoft.identitymodel.abstractions.8.2.1.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.2.1\\microsoft.identitymodel.jsonwebtokens.8.2.1.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.identitymodel.logging\\8.2.1\\microsoft.identitymodel.logging.8.2.1.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.2.1\\microsoft.identitymodel.tokens.8.2.1.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.openapi\\1.6.22\\microsoft.openapi.1.6.22.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.2\\pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\swashbuckle.aspnetcore\\7.1.0\\swashbuckle.aspnetcore.7.1.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\7.1.0\\swashbuckle.aspnetcore.swagger.7.1.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\7.1.0\\swashbuckle.aspnetcore.swaggergen.7.1.0.nupkg.sha512",
-    "C:\\Users\\Marcos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\7.1.0\\swashbuckle.aspnetcore.swaggerui.7.1.0.nupkg.sha512"
+    "C:\\Users\\Marcos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\7.1.0\\swashbuckle.aspnetcore.swaggerui.7.1.0.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.2.1\\system.identitymodel.tokens.jwt.8.2.1.nupkg.sha512"
   ],
   "logs": [
     {

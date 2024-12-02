@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Model;
 using WebApi.ViewModel;
-using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApi.Controllers {
   [ApiController]
@@ -13,6 +13,7 @@ namespace WebApi.Controllers {
       colaboradoresRepository = colaboradoresRepositoryArg ?? throw new ArgumentNullException();
     }
 
+    [Authorize]
     [HttpPost]
     public IActionResult Add([FromForm] ColaboradoresViewModel colaboradoresView) {
       var filePath = Path.Combine("Storage", colaboradoresView.foto.FileName);
@@ -25,6 +26,7 @@ namespace WebApi.Controllers {
       return Ok();
     }
 
+    [Authorize]
     [HttpPost]
     [Route("{id}/download")]
     public IActionResult DownloadFoto(int id) {
@@ -34,6 +36,7 @@ namespace WebApi.Controllers {
       return File(dataBytes, "image/png");
     }
 
+    [Authorize]
     [HttpGet]
     public IActionResult Get() {
       var colaboradores = colaboradoresRepository.Get();
