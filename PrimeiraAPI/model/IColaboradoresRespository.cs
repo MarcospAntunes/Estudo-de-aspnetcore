@@ -1,7 +1,9 @@
-namespace WebApi.Model {
-  public interface IColaboradoresRepository {
+namespace WebApi.Model
+{
+  public interface IColaboradoresRepository
+  {
     void Add(Colaboradores colaboradores);
-    List<Colaboradores> Get();
+    List<Colaboradores> Get(int pageNumber, int pageQuantity);
     Colaboradores? Get(int id);
   }
 }

@@ -10,8 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c => {
-  c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme {
+builder.Services.AddSwaggerGen(c =>
+{
+  c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+  {
     Name = "Authorization",
     In = ParameterLocation.Header,
     Type = SecuritySchemeType.ApiKey,
@@ -38,13 +40,16 @@ builder.Services.AddTransient<IColaboradoresRepository, ColaboradoresRepository>
 
 var key = Encoding.ASCII.GetBytes(WebApi.Key.Secret);
 
-builder.Services.AddAuthentication(x => {
+builder.Services.AddAuthentication(x =>
+{
   x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
   x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(x => {
+}).AddJwtBearer(x =>
+{
   x.RequireHttpsMetadata = false;
   x.SaveToken = true;
-  x.TokenValidationParameters = new TokenValidationParameters {
+  x.TokenValidationParameters = new TokenValidationParameters
+  {
     ValidateIssuerSigningKey = true,
     IssuerSigningKey = new SymmetricSecurityKey(key),
     ValidateIssuer = false,
@@ -63,6 +68,9 @@ if (app.Environment.IsDevelopment())
     c.RoutePrefix = string.Empty;
   });
 
+  app.UseExceptionHandler("/error-development");
+} else {
+  app.UseExceptionHandler("/error");
 }
 
 app.UseHttpsRedirection();

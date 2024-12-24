@@ -4,11 +4,15 @@ using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace WebApi.Services {
-  public class TokenService {
-    public static object GenerateToken(Colaboradores colaboradores) {
+namespace WebApi.Services
+{
+  public class TokenService
+  {
+    public static object GenerateToken(Colaboradores colaboradores)
+    {
       var key = Encoding.ASCII.GetBytes(Key.Secret);
-      var tokenConfig = new SecurityTokenDescriptor {
+      var tokenConfig = new SecurityTokenDescriptor
+      {
         Subject = new ClaimsIdentity(new Claim[] {
           new Claim("colaboradorId", colaboradores.id.ToString()),
         }),
@@ -20,7 +24,8 @@ namespace WebApi.Services {
       var token = tokenHandler.CreateToken(tokenConfig);
       var tokenString = tokenHandler.WriteToken(token);
 
-      return new {
+      return new
+      {
         token = tokenString
       };
 
